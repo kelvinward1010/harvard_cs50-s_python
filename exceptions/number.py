@@ -6,12 +6,12 @@ def get_int():
     while True:
         try:
             x = int(input("What's x? "))
-            break
+            return x
         except ValueError:
             print(f"x is not a integer")
+            pass
         except NameError:
             print(f"x is not defined")
-
-    return x
+    
 
 main()
